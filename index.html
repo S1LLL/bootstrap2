@@ -7,23 +7,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 <body>
-    <div class="container1">
-        <div class="row">
-          <div class="box box-4 col-4">4</div>
-          <div class="box box-6 col-6">6</div>
-          <div class="box box-2 col-2">2</div>
-        </div>
+  <div class="dropdown">
+    1 задание
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Выпадающий список
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Наша история</a>
+      <a class="dropdown-item" href="#">Наша команда</a>
+      <a class="dropdown-item" href="#">Контакты</a>
+    </div>
+  </div>
+  <div id="faq">
+    <div class="card">
+      2задание
+      <div class="card-header">
+        <h5 class="card-title">
+          <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+            Что если ботинки большие для моих ног?
+          </a>
+       </h5>
       </div>
-    <div class="container">
-        <h1>
-            Задание 2
-        </h1>
-        <div class="row">
-          <div class="box box-1 col-12 col-sm-6 col-md-4 col-xl">1</div>
-          <div class="box box-2 col-12 col-sm-6 col-md-4 col-xl">2</div>
-          <div class="box box-3 col-12 col-sm-6 col-md-4 col-xl">3</div>
-          <div class="box box-4 col-12 col-sm-6 col-md-6 col-xl">4</div>
-        </div>
+      <div id="answerOne" class="collapse show">
+       <div class="card-body">
+         Набейте ботинки газетами или салфетками.
+       </div>
       </div>
+      <div class="card-header">
+        <h5 class="card-title">
+          <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+            Могу я носить ботинки в помещении?
+          </a>
+       </h5>
+      </div>
+      <div id="answerOne" class="collapse show">
+       <div class="card-body">
+         Набейте ботинки газетами или салфетками.
+       </div>
+      </div>
+      <div class="card-header">
+        <h5 class="card-title">
+          <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+            Что делать, если ботинки скользят при намокании?
+          </a>
+       </h5>
+      </div>
+      <div id="answerOne" class="collapse show">
+       <div class="card-body">
+         Набейте ботинки газетами или салфетками.
+       </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
